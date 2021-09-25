@@ -1,0 +1,164 @@
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+a.ui-link:link,
+a.ui-link:active {
+    text-decoration: none;
+    color: #768BE5;
+}
+
+a.ui-link:hover,
+a.ui-link:visited {
+    text-decoration: none;
+    color: #44526C;
+}
+
+/*Background*/
+#page {
+    background-color: #f5f2ed;
+    color: #768BE5;
+    text-align: center;
+}
+
+.header h1 {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.header p {
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    line-height: 40px;
+    color: #44526C;
+}
+
+#error {
+    font-family: 'Rubik', sans-serif;
+    width: 50%;
+    margin: 20px auto;
+    padding: 15px;
+    font-size: 20px;
+    background-color: #FF3666;
+    border-radius: 5px;
+    color: #fff;
+}
+
+#result {
+    font-family: 'Rubik', sans-serif;
+    font-size: 50px;
+    background-color: rgba(183, 180, 176, 0.26);
+    padding: 5% 0;
+    border-radius: 5px;
+    margin: 20px;
+    color: #fff;
+}
+
+/* Hide the number input */
+.full-width-slider input {
+    display: none !important;
+}
+
+.full-width-slider .ui-slider-track {
+    margin-left: 15px;
+}
+
+#start,
+#new,
+#pause {
+    font-family: 'Rubik', sans-serif;
+    background-color: #44526C;
+    color: #fff;
+    font-weight: 100;
+}
+
+#start {
+    margin-top: 30px;
+}
+
+#pause {
+    font-family: 'Rubik', sans-serif;
+    background-color: #FF3666;
+    color: #fff;
+}
+
+#resume {
+    background-color: #33dd8e;
+    color: #Fff;
+    font-weight: 100;
+}
+
+ion-icon {
+    font-size: 30px;
+    --ionicon-stroke-width: 40px;
+}
+
+#fontsize,
+#speed,
+#percentage {
+    font-family: 'Rubik', sans-serif;
+}
+
+hr.rounded {
+    border-top: 8px solid #44526C;
+    border-radius: 5px;
+}
+
+.wpm,
+.font,
+.full-width-slider {
+    color: #051923;
+}
+
+footer {
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    color: #768BE5;
+    padding-bottom: 30px;
+}
+
+/*Sliders Color*/
+.ui-page-theme-a .ui-btn.ui-btn-active,
+html .ui-bar-a .ui-btn.ui-btn-active,
+html .ui-body-a .ui-btn.ui-btn-active,
+html body .ui-group-theme-a .ui-btn.ui-btn-active,
+html head+body .ui-btn.ui-btn-a.ui-btn-active,
+.ui-page-theme-a .ui-checkbox-on:after,
+html .ui-bar-a .ui-checkbox-on:after,
+html .ui-body-a .ui-checkbox-on:after,
+html body .ui-group-theme-a .ui-checkbox-on:after,
+.ui-btn.ui-checkbox-on.ui-btn-a:after,
+.ui-page-theme-a .ui-flipswitch-active,
+html .ui-bar-a .ui-flipswitch-active,
+html .ui-body-a .ui-flipswitch-active,
+html body .ui-group-theme-a .ui-flipswitch-active,
+html body .ui-flipswitch.ui-bar-a.ui-flipswitch-active,
+.ui-page-theme-a .ui-slider-track .ui-btn-active,
+html .ui-bar-a .ui-slider-track .ui-btn-active,
+html .ui-body-a .ui-slider-track .ui-btn-active,
+html body .ui-group-theme-a .ui-slider-track .ui-btn-active,
+html body div.ui-slider-track.ui-body-a .ui-btn-active {
+    background-color: #768BE5;
+}
+
+.ui-slider-track .ui-btn.ui-slider-handle {
+    border-radius: 50px;
+}

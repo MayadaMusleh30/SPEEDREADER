@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Speed Reader</title>
+        <link rel="icon" href="/favicon.png" type="image/x-icon">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <script src="index.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </head>
+    <body>
+
+        <div data-role="page" id="page">
+            <div data-role="main" class="ui-content">
+                <!--Title-->
+                <div class="header">
+                    <div class="stopwatch animate__animated animate__fadeIn"><img src="stopwatch.gif" width="150" height="150" alt="Stopwatch"></div>
+                    <h1 class="animate__animated animate__lightSpeedInLeft"><i>Speed Reader</i></h1>
+                    <hr class="rounded">
+                    <p id="intro">How many words per minute (WPM) can <i>you</i> read?<br>Type in or paste your text and challenge yourself!</p>
+                    <p id="instructions" class="stopwatch animate__animated animate__fadeIn"><b>TIP:</b><br>Play around with WPM and font size, and rewind using the progress slider<br>Re-read text by pressing "Read"</p>
+                </div>
+                
+                <div id="controls">
+                    <!--Font size and speed-->
+                    <div class="ui-grid-a">
+                        <div class="ui-block-a">
+                            <div class="font">
+                                Font Size: <span id="fontsize">50</span> px
+                            </div>
+                        </div>
+                        <div class="ui-block-b">
+                            <div class="wpm">
+                                <span id="speed">300</span> WPM
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Slider-->
+                    <div class="ui-grid-a">
+                        <div class="ui-block-a">
+                            <form class="full-width-slider">
+                                <input type="range" name="fontsizeslider" id="fontsizeslider" min="20" max="100" value="50" step="5px" data-highlight="true">
+                            </form>
+                        </div>
+                        <div class="ui-block-b">
+                            <form class="full-width-slider">
+                                <input type="range" name="speedslider" id="speedslider" min="50" max="600" value="300" step="50" data-highlight="true">
+                            </form>
+                        </div>
+                    </div>
+
+                    <!--Progress-->
+                    <form class="full-width-slider">
+                        <label for="progressslider">Progress: <span id="percentage">0</span>%</label>
+                        <input type="range" name="progressslider" id="progressslider" min="0" max="100" value="0" data-highlight="true">
+                    </form>
+                </div>
+                
+                <!--Result-->
+                    <div id="result">word</div>
+                
+                <!--Error Message-->
+                    <div id="error">
+                    <ion-icon name="alert-circle-outline" class="alert"></ion-icon><br>Please put text in the box
+                    </div>
+                
+                    <!--User Inputs-->
+                    <div id="inputs">
+                        <textarea id="userInput" placeholder="Write something here"></textarea>
+                        <button id="start">Read</button>
+                        <button id="pause"><ion-icon name="pause-outline"></ion-icon></button>
+                        <button id="resume"><ion-icon name="caret-forward-outline"></ion-icon></ion-icon></button>
+                        <button id="new">New Text</button>
+                    </div>
+                </div>
+            <footer>Gif credit: <a href="https://www.elbailey.com/">El Bailey</a></footer>
+            </div>
+    </body>
+</html>
